@@ -43,7 +43,7 @@ void read_arguments(int argc,char **argv,int *TOTAL_SIMULATION_TIME, FILE **Inpu
 void read_from_file(FILE **InputFileName, int *MAX_X_COORD, int *MAX_Y_COORD, int *N,Person **person) {
 
     if (fscanf(*InputFileName,"%d %d %d",MAX_X_COORD, MAX_Y_COORD,N)!=3) {
-        printf("Error: Could not read from file\n");
+        printf("Error: Could not read from fileguramica\n");
         return;
     }
 
@@ -54,7 +54,7 @@ void read_from_file(FILE **InputFileName, int *MAX_X_COORD, int *MAX_Y_COORD, in
     }
     for (int i=0;i<*N;i++) {
         if (fscanf(*InputFileName,"%d %d %d %d %d %d",&((*person)[i].PersonID),&((*person)[i].x),&((*person)[i].y),&((*person)[i].initial_status),&((*person)[i].moving_direction),&((*person)[i].moving_amplitude))!=6) {
-            printf("Error: Could not read from file 2.\n");
+            printf("Error: Could not read from filelalala\n");
             return;
         }
         (*person)[i].current_status=(*person)[i].initial_status;
